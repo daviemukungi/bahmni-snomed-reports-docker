@@ -12,4 +12,4 @@ sh /etc/bahmni-reports/run-liquibase.sh liquibase_bahmni_reports.xml $REPORTS_DB
 echo "[INFO] Starting Application"
 #java -cp .:/opt/bahmni-reports/lib/extensions-1.0-SNAPSHOT.jar $SERVER_OPTS $DEBUG_OPTS /opt/bahmni-reports/lib/bahmni-embedded-tomcat.jar
 #java -cp .:/opt/bahmni-reports/lib/extensions-1.0-SNAPSHOT.jar:/opt/bahmni-reports/lib/bahmni-embedded-tomcat.jar $SERVER_OPTS $DEBUG_OPTS org.springframework.boot.loader.JarLauncher
-java $SERVER_OPTS $DEBUG_OPTS -cp /opt/bahmni-reports/lib/extensions-1.0-SNAPSHOT.jar:/opt/bahmni-reports/lib/bahmni-embedded-tomcat.jar org.bahmni.deployment.launch.Main
+java $SERVER_OPTS $DEBUG_OPTS -cp /opt/bahmni-reports/lib/extensions-1.0-SNAPSHOT-jar-with-dependencies.jar:/opt/bahmni-reports/lib/bahmni-embedded-tomcat.jar org.bahmni.deployment.launch.Main
